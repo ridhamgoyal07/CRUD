@@ -22,10 +22,16 @@ app.set("view engine" , "ejs");
 // app.set("views",path.resolve(__dirname, "views/ejs"));
 
 // load assets
-app.use('/css', express.static(path.resolve(__dirname , "assets/css")));
+app.use('/css', express.static(path.resolve(__dirname , "assets/css"))); // css/styling.css
+app.use('/img', express.static(path.resolve(__dirname , "assets/img"))); 
+app.use('/js', express.static(path.resolve(__dirname , "assets/js"))); 
+
+
+
  
 app.get('/',(req,res)=>{
-    res.send("CRUD Application is Running");
+    // res.send("CRUD Application is Running");
+    res.render(`index.ejs`);
 });
 
 app.listen(PORT, ()=>{
