@@ -97,8 +97,52 @@ table{
     background-color: var(--dark);
     border-color: #32383e;
 }
-/* #site-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+
+/* Add user & update user template  */
+.form-title{
+    margin-top:2em;
+}
+.form-title > h2{
+    max-width: 786px;
+    margin:auto;
+
+}
+#update_user .form-group, #add_user .form-group{
+    margin: .4em 0 ;
+
+}
+#update_user .form-group input[type="text"] , input[type="email"],
+#add_user .form-group input[type="text"] , input[type="email"]{
+    width:100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow' , sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_user .form-group .radio,
+#add_user .form-group .radio{
+    margin:1em 2em; 
+}
+/* adding style to radio buttons */
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width:100%;
+    padding:.9em 1em;
+    background-color: #16db93;
+    border:none;
+    font-family: 'PT Sans' , sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover{
+    background-color: var(--dark);
+    border: var(--border);
+    color: var(--light);
+}
